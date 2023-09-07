@@ -386,6 +386,9 @@
     transition: fill 250ms var(--cubic), background-color 250ms var(--cubic);
 }
 
+.icon_social_list:focus-visible{
+    border-color: var(--primary-color);
+}
 /* clients */
 .clients{
     padding: 59px 0 94px 0;
@@ -529,6 +532,7 @@
 
 .footer_form_box:hover,
 .footer_form_box:focus{
+    transition: color 250ms var(--cubic);
     outline: none;
     border: 2px solid var(--primary-color);
 }
@@ -812,6 +816,7 @@
 
 .textarea:hover,
 .textarea:focus{
+    transition: color 250ms var(--cubic);
     border-color: var(--primary-color);
     cursor: pointer;
     outline: none;
@@ -831,6 +836,7 @@
 
 .checkbox:hover,
 .checkbox:focus{
+    transition: color 250ms var(--cubic);
     cursor: pointer;
     color: var(--primary-color);
 }
@@ -852,6 +858,7 @@
 
 .button_submit:hover,
 .button_submit:focus{
+    transition: color 250ms var(--cubic);
     cursor: pointer;
     transform: scale(1.2);
     transition: 0.3s var(--cubic);
@@ -866,10 +873,15 @@
 .input:focus,
 .label_name:hover,
 .input:hover{
+    transition: color 250ms var(--cubic);
     border-color: var(--primary-color);
     fill: var(--primary-color);
     cursor: pointer;
     outline: none;
+}
+
+.input:focus + .icon_form{
+    fill: var(--primary-color);
 }
 
 .icon_form{
